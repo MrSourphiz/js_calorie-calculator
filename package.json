@@ -2,6 +2,7 @@
   "name": "js-calorie-calculator",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://mrsourphiz.github.io/js_calorie-calculator/",
   "description": "Простой калькулятор калорий на ванильном JS",
   "repository": {
     "type": "git",
@@ -12,9 +13,13 @@
     "eslint-config-htmlacademy": "^0.5.2"
   },
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  },
   "scripts": {
-    "test": "eslint js/"
+    "test": "eslint js/",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "engines": {
     "node": "8.11"
